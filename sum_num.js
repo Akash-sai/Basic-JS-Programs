@@ -6,5 +6,4 @@ function sumDigits(num) {
     }
     return sum;
 }
-
 console.log(sumDigits(123)); 
