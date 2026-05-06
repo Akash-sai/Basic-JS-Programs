@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: white;
+    color: black;
+}
+.navbar{
+    width: 100%;
+    padding: 18px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: linear-gradient(90deg, #ff7e5f, #2b1504); used for 2 colors in bg */
+    background-color: aqua;
+}
+.menu-btn{
+    /* color: black;
+    font-size: 24px;
+    cursor: pointer; */
+    display: block;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    gap: 20px;
+    list-style: none;
+}
+
+/* RESPONSIVENESS */
+@media (max-width: 768px){
+    .menu-btn{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background-color: rgb(254, 254, 254);
+        width: 200px;
+        flex-direction: column;
+        text-align: center;
+        display: none;
+        padding: 20px;
+    }
+    .nav-links.active{
+        display: flex;
+    }
+}
+button{
+    width: 120px;
+    height: 60px;
+}
+#btn{
+    background-color: green;
+    border: none;
+    cursor: pointer;
+}
+#btn2{
+    border: none;
+    cursor: pointer;
+    background-color: sandybrown;
+}
+#btn3{
+    border: none;
+    cursor: pointer;
+    background-color: rgb(61, 231, 28);
+}
+#btn4{
+    border: none;
+    cursor: pointer;
+    background-color: rgb(35, 176, 173);
+}
+:root {
+    --primary-color: #D97A6E;
+    --secondary-color: #A67C8E;
+    --text-dark: #333;
+    --text-light: #666;
+    --white: #FFFFFF;
+    --light-gray: #F5F5F5;
+    --border-color: #E0E0E0;
+}
